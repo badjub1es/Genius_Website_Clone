@@ -1,0 +1,532 @@
+@font-face {
+    font-family: 'Programme';
+    src: url(https://assets.genius.com/fonts/programme_bold.woff2?1641400757) format('woff2'),
+      url(https://assets.genius.com/fonts/programme_bold.woff?1641400757) format('woff');
+    font-style: normal;
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: 'Programme';
+    src: url(https://assets.genius.com/fonts/programme_normal.woff2?1641400757) format('woff2'),
+      url(https://assets.genius.com/fonts/programme_normal.woff?1641400757) format('woff');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'Programme';
+    src: url(https://assets.genius.com/fonts/programme_normal_italic.woff2?1641400757) format('woff2'),
+      url(https://assets.genius.com/fonts/programme_normal_italic.woff?1641400757) format('woff');
+    font-style: italic;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'Programme';
+    src: url(https://assets.genius.com/fonts/programme_light_italic.woff2?1641400757) format('woff2'),
+      url(https://assets.genius.com/fonts/programme_light_italic.woff?1641400757) format('woff');
+    font-style: italic;
+    font-weight: 100;
+  }
+
+* {
+    font-family: "Programme";
+}
+body {
+    margin: 0px;
+}
+input {
+    border: none;
+    height: 25px;
+    outline: none;
+}
+.head_search {
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+}
+.head_upper {
+    background-color: #FFFF64;
+}
+.head_searchicon {
+    background-color: white;
+    padding: 0px 4px;
+}
+input::placeholder {
+    font-family: 'Programme';
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+input:focus::placeholder {
+    color: gray;
+}
+
+.body_section {
+    display: flex;
+    flex-direction: column;
+}
+
+.head_upper {
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+#search {
+    height: 20px;
+}
+.head_searchbar {
+    display: flex;
+}
+.head_signup > a {
+    text-decoration: none;
+    font-weight: 100;
+    margin-right: 20px;
+}
+
+.head_lower > div > a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 20px;
+}
+.head_lower {
+    display: flex;
+    background-color: black;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.head_remy_link, .head_featured_link, .head_charts_link, .head_videos_link {
+    border-right: 1px solid white;
+}
+
+.head_FB, .head_TW, .head_INSTA {
+    margin-right: 20px;
+}
+.icon {
+   height: 10px;
+}
+.section_one {
+    grid-area: sectionone;
+    display: grid;
+    grid-template-columns: 20% 540px 2% 700px 25%;
+    grid-template-rows: 5% 48.75% 5% 48.75%;
+    grid-template-areas:
+    "f e g z ."
+    "a b c d ."
+    ". . . . ."
+    "h news news news .";
+    justify-content: center;
+    height: 740px;
+    margin-bottom: 75px;
+}
+.section_one_half_one {
+    border-top: 2px solid black;
+    grid-row: 2;
+    grid-area: b;
+    position: relative;
+    left: 120px;
+    width: 500px;
+
+}
+.section_one_half_two {
+    grid-row: 2;
+    grid-area: d;
+    justify-self: right;
+}
+.body_section {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+h1 {
+    font-weight: lighter;
+}
+
+.feature_text {
+    grid-area: e;
+    font-weight: lighter;
+    font-size: small;
+
+
+}
+.feature_text_text {
+    background-color: white;
+    position: relative;
+    top: 30px;
+    left: 120px;
+    z-index: 1;
+    padding-right: 7px;
+}
+a:visited {
+    text-decoration: none;
+}
+.author {
+    font-size: 10px;
+}
+.article_date {
+    color: gray;
+}
+.section_two {
+    grid-area: h
+}
+.news {
+    width: auto;
+    justify-self: center;
+    grid-row: 4;
+    grid-area: news;
+    display: grid;
+    grid-template-columns: 260px 5% 260px 5% 260px 5% 260px;
+    grid-template-areas:
+    "news1 . news2 . news3 . news4";
+}
+.news1, .news2, .news3 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: small;
+}
+
+.news4 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: small;
+}
+
+.news1 {
+    grid-area: news1;
+    height: 350px;
+    align-self: end;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "row1"
+    "row2"
+    "row3";
+}
+.news2 {
+    grid-area: news2;
+    height: 350px;
+    align-self: end;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "row1a"
+    "row2a"
+    "row3a";
+
+}
+.news3 {
+    grid-area: news3;
+    height: 350px;
+    align-self: end;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "row1b"
+    "row2b"
+    "row3b";
+}
+.news4 {
+    grid-area: news4;
+    height: 350px;
+    align-self: end;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: none;
+    grid-template-areas:
+    "row1c"
+    "row2c"
+    "row3c";
+}
+.news1text {
+    grid-area: row1;
+
+}
+.pSpec {
+    font-size: 21px;
+    font-weight: lighter;
+    padding-top: 10px;
+    padding-top: 10px;
+}
+.line1{
+    width: 50%;
+    border-right: 1px solid black;
+}
+.newsauthor {
+    grid-area: row2;
+    align-self: end;
+    padding-bottom: 4px;
+}
+.news2p, .news2text {
+    grid-area: row1a;
+}
+
+.news2 > .author2 {
+    grid-area: row2a;
+    align-self: end;
+    margin-bottom: 4px;
+}
+.news3p, .news3text {
+    grid-area: row1b;
+}
+
+.greenimage > img {
+    grid-area: row3;
+    width: 240px;
+
+}
+
+.news2 > img {
+    grid-area: row3a;
+    width: 240px;
+}
+
+.news3 > img {
+    grid-area: row3b;
+    width: 240px;
+}
+
+.news4 > img {
+    grid-area: row3c;
+    width: 240px;
+}
+
+.author3 {
+    grid-area: row2b;
+    align-self: end;
+    padding-bottom: 4px;
+}
+.news4p, .news4text {
+    grid-area: row1c;
+}
+
+.author4 {
+    grid-area: row2c;
+    align-self: end;
+    padding-bottom: 4px;
+}
+
+.body_charts {
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+    grid-template-columns: 1px 225px 225px 275px 225px 225px;
+    grid-template-rows: 88px 20px 115px repeat(11, 77px);
+    grid-template-areas:
+    " . . . head . . "
+    " . . . lowhead . . "
+    " . . . drop . . "
+    " s1 s1 s1 s1 s1 s1 "
+    " s2 s2 s2 s2 s2 s2 "
+    " s3 s3 s3 s3 s3 s3 "
+    " s4 s4 s4 s4 s4 s4 "
+    " s5 s5 s5 s5 s5 s5 "
+    " s6 s6 s6 s6 s6 s6 "
+    " s7 s7 s7 s7 s7 s7 "
+    " s8 s8 s8 s8 s8 s8 "
+    " s9 s9 s9 s9 s9 s9 "
+    " s10 s10 s10 s10 s10 s10 ";
+}
+
+.chart_head {
+    grid-row: 1;
+    grid-area: head;
+    justify-self: center;
+    font-size: 82px;
+    font-weight: bold;
+}
+
+.chart_lower_text {
+    margin-top: 7px;
+    grid-row: 2;
+    font-size: 15px;
+    grid-area: lowhead;
+    justify-self: center;
+    color: #FF1464
+}
+
+.chart_dropdown {
+    grid-row: 3;
+    grid-area: drop;
+    border: 2px solid black;
+    padding: 10px 17px;
+    font-size: 15px;
+}
+
+.menu_arrow {
+    height: 7px;
+    align-self: center;
+    margin-left: 5px;
+}
+
+.calign {
+    justify-self: center;
+    align-self: center;
+} .viewFormat {
+    font-size: 12px;
+}
+
+.chart_grid{
+    display: grid;
+    grid-template-columns: 50px 150px 400px 225px 225px 225px;
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px  solid #E9E9E9;
+    align-content: center;
+}
+
+.chart_song1 {
+    grid-row: 4;
+    grid-area: s1;
+    grid-template-areas:
+    "n1 p1 s1 a1 f1 e1";
+ } .num1 {
+    grid-area: n1;
+    font-size: 25px;
+} .song1title {
+    display: flex;
+    font-size: 25px;
+} .songlyrics {
+    font-size: 15px;
+    align-self: center;
+    margin-left: 13px;
+    position: relative;
+    top: 1px;
+    color: #9A9A9A;
+} .chart_grid:hover {
+    background-color: #E9E9E9;
+} .photo1 {
+    grid-area: p1;
+    height: 60px;
+} .song1artist {
+    align-self: center;
+    font-size: 25px;
+} .viewcount1 {
+    display: flex;
+} .eyecount1 {
+    align-self: center;
+} .viewnumber {
+    position: relative;
+    top: 2px;
+    left: 4px;
+    color: #FF1464;
+} .numberdiv {
+    align-self: center;
+} .viewcount1 > img {
+    height: 20px;
+} .eyecount1 > img {
+    height: 10px
+}
+
+.chart_song2 {
+    grid-row: 5;
+    grid-area: s2;
+    grid-template-areas:
+    "n2 p2 s2 a2 f2 e2";
+ } .num2 {
+    grid-area: n2;
+    font-size: 25px;
+} .photo2 {
+    grid-area: p2;
+    height: 60px;
+} .chart_song3 {
+    grid-row: 6;
+    grid-area: s3;
+    grid-template-areas:
+    "n3 p3 s3 a3 f3 e3";
+ } .num3 {
+    grid-area: n3;
+    font-size: 25px;
+} .photo3 {
+    grid-area: p3;
+    height: 60px;
+} .chart_song4 {
+    grid-row: 6;
+    grid-area: s4;
+    align-content: center;
+    grid-template-areas:
+    "n4 p4 s4 a4 f4 e4";
+ } .num4 {
+    grid-area: n4;
+    font-size: 25px;
+} .photo4 {
+    grid-area: p4;
+    height: 60px;
+} .chart_song5 {
+    grid-row: 7;
+    grid-area: s5;
+    align-content: center;
+    grid-template-areas:
+    "n5 p5 s5 a5 f5 e5";
+ } .num5 {
+    grid-area: n5;
+    font-size: 25px;
+} .photo5 {
+    grid-area: p5;
+    height: 60px;
+} .chart_song6 {
+    grid-row: 8;
+    grid-area: s6;
+    align-content: center;
+    grid-template-areas:
+    "n6 p6 s6 a6 f6 e6";
+ } .num6 {
+    grid-area: n6;
+    font-size: 25px;
+} .photo6 {
+    grid-area: p6;
+    height: 60px;
+} .chart_song7 {
+    grid-row: 9;
+    grid-area: s7;
+    align-content: center;
+    grid-template-areas:
+    "n7 p7 s7 a7 f7 e7";
+ } .num7 {
+    grid-area: n7;
+    font-size: 25px;
+} .photo7 {
+    grid-area: p7;
+    height: 60px;
+} .chart_song8 {
+    grid-row: 10;
+    grid-area: s8;
+    align-content: center;
+    grid-template-areas:
+    "n8 p8 s8 a8 f8 e8";
+ } .num8 {
+    grid-area: n8;
+    font-size: 25px;
+} .photo8 {
+    grid-area: p8;
+    height: 60px;
+} .chart_song9 {
+    grid-row: 11;
+    grid-area: s9;
+    align-content: center;
+    grid-template-areas:
+    "n9 p9 s9 a9 f9 e9";
+ } .num9 {
+    grid-area: n9;
+    font-size: 25px;
+} .photo9 {
+    grid-area: p9;
+    height: 60px;
+} .chart_song10 {
+    grid-row: 12;
+    grid-area: s10;
+    align-content: center;
+    grid-template-areas:
+    "n10 p10 s10 a10 f10 e10";
+ } .num10 {
+    grid-area: n10;
+    font-size: 25px;
+} .photo10 {
+    grid-area: p10;
+    height: 60px;
+}
+
+#title {
+    justify-self: left;
+}
